@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeWell - Organize Your Life</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <header>
+        <div class="header-bg" id="headerBg"></div>
+        <nav>
+            <div class="logo">
+                <img src="analog-clock-icon-blue.webp" alt="TimeWell Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="to-do.html">To-do List</a></li>
+                <li><a href="task.html">Task Manager</a></li>
+                <li><a href="time-tracker.html">Time Tracker</a></li>
+                <li><a href="contact.html">Contact List</a></li>
+                <li><a href="goal-setting.html">Goal Setting</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#" id="logout-btn" style="display: none;">Logout</a></li>
+            </ul>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-btn"><i class="fas fa-sun"></i></button>
+                <a href="profile.html" class="profile-link"><i class="fas fa-user"></i> Profile</a>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>Organize Your Life, One Step at a Time</h1>
+            <p>Boost your productivity with our intuitive tools designed to manage tasks, track progress, and keep your life in perfect sync.</p>
+            <div class="hero-buttons">
+                <a href="signup.html"><button class="cta">Sign Up Free</button></a>
+                <a href="login.html"><button class="cta secondary">Login</button></a>
+            </div>
+        </div>
+        <div class="progress-bar" id="scrollProgress"></div>
+    </header>
+
+    <section class="features">
+        <h2>Your Productivity Hub</h2>
+        <div class="features-grid">
+            <div class="feature-row">
+                <div class="feature-card" data-tooltip="Organize daily tasks effortlessly">
+                    <h3>To-do List</h3>
+                    <p>Effortlessly organize your daily priorities with smart reminders and progress tracking.</p>
+                    <a href="to-do.html" class="cta-tool">Try It Now</a>
+                </div>
+                <div class="feature-card" data-tooltip="Plan projects with ease">
+                    <h3>Task Manager</h3>
+                    <p>Break down complex projects into manageable steps with our powerful planning tools.</p>
+                    <a href="task.html" class="cta-tool">Try It Now</a>
+                </div>
+                <div class="feature-card" data-tooltip="Keep contacts in one place">
+                    <h3>Contact List</h3>
+                    <p>Keep all your important connections organized and accessible in one secure place.</p>
+                    <a href="contact.html" class="cta-tool">Try It Now</a>
+                </div>
+            </div>
+            <div class="feature-row">
+                <div class="feature-card" data-tooltip="Track your time usage">
+                    <h3>Time Tracker</h3>
+                    <p>Monitor how you spend your time with detailed insights and reports.</p>
+                    <a href="time-tracker.html" class="cta-tool">Try It Now</a>
+                </div>
+                <div class="feature-card" data-tooltip="Set and achieve goals">
+                    <h3>Goal Setting</h3>
+                    <p>Set and achieve your objectives with guided milestones and motivation.</p>
+                    <a href="goal-setting.html" class="cta-tool">Try It Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <p>Get started in three simple steps and take control of your productivity today.</p>
+        <div class="steps-grid">
+            <div class="step-item">
+                <h3>Step 1: Sign Up</h3>
+                <p>Create your free account in seconds and unlock access to all our tools.</p>
+            </div>
+            <div class="step-item">
+                <h3>Step 2: Organize</h3>
+                <p>Use our intuitive interface to set up tasks, goals, and contacts effortlessly.</p>
+            </div>
+            <div class="step-item">
+                <h3>Step 3: Succeed</h3>
+                <p>Track your progress and achieve your goals with real-time insights.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-grid" id="testimonialGrid">
+            <div class="testimonial-card">
+                <p>"TimeWell transformed how I manage my workday. I’m more focused and less stressed!"</p>
+                <h4>- Sarah K., Project Manager</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"The task manager is a game-changer for my team’s productivity. Highly recommend!"</p>
+                <h4>- Michael R., Entrepreneur</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"I love how simple yet powerful the to-do list is. It keeps me on track every day."</p>
+                <h4>- Emily T., Student</h4>
+            </div>
+        </div>
+        <div class="comment-form">
+            <h3>Share Your Thoughts</h3>
+            <form id="commentForm">
+                <textarea id="commentText" placeholder="Write your comment here..." rows="4" required></textarea>
+                <input type="text" id="commentName" placeholder="Your Name (e.g., John D.)" required>
+                <button type="submit" class="cta">Submit Comment</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <h2>Why Choose TimeWell?</h2>
+        <p>Unlock your full potential with a suite of tools designed to streamline your life and boost efficiency.</p>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <h3>Intuitive Design</h3>
+                <p>User-friendly interface that gets you started in minutes.</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Real-Time Sync</h3>
+                <p>Access your tasks and contacts across all devices instantly.</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Smart Analytics</h3>
+                <p>Track your productivity patterns and optimize your workflow.</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Secure & Private</h3>
+                <p>Your data stays safe with top-tier encryption.</p>
+            </div>
+        </div>
+        <a href="signup.html"><button class="cta">Get Started Now</button></a>
+    </section>
+
+    <section class="stats">
+        <h2>Our Impact</h2>
+        <p>See how TimeWell is helping users worldwide achieve more.</p>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>50,000+</h3>
+                <p>Active Users</p>
+            </div>
+            <div class="stat-item">
+                <h3>1M+</h3>
+                <p>Tasks Completed</p>
+            </div>
+            <div class="stat-item">
+                <h3>95%</h3>
+                <p>User Satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Ready to Take Control?</h2>
+        <p>Join a growing community of over 50,000 users who trust TimeWell to master their schedules and achieve their goals.</p>
+        <div class="cta-buttons">
+            <a href="login.html" class="cta">Login</a>
+            <a href="signup.html" class="cta secondary">Sign Up</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a> | 
+                <a href="to-do.html">To-do List</a> | 
+                <a href="task.html">Task Manager</a> | 
+                <a href="time-tracker.html">Time Tracker</a> | 
+                <a href="contact.html">Contact List</a> | 
+                <a href="goal-setting.html">Goal Setting</a> | 
+                <a href="profile.html">Profile</a> | 
+                <a href="login.html">Login</a>
+            </div>
+            <div class="newsletter">
+                <p>Join our newsletter for productivity tips and exclusive updates!</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button class="cta">Subscribe</button>
+                </div>
+            </div>
+            <div class="social-links">
+                
+            </div>
+            <p>© 2025 TimeWell. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="fab" id="fab"><i class="fas fa-plus"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>

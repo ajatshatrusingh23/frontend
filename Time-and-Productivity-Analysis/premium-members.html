@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeWell - Premium Members</title>
+    <link rel="stylesheet" href="Premium Member/premium-members.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="custom-cursor" id="cursor"></div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="analog-clock-icon-blue.webp" alt="TimeWell Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="todo.html">To-do List</a></li>
+                <li><a href="taskmanager.html">Task Manager</a></li>
+                <li><a href="contactlist.html">Contact List</a></li>
+                <li><a href="goalsetting.html">Goal Setting</a></li>
+                <li><a href="premium-members.html">Premium Members</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-btn"><i class="fas fa-sun"></i></button>
+                <button class="cta-nav">Get Started</button>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>Premium Members Area</h1>
+            <p>Unlock exclusive tools, resources, and community perks designed to supercharge your productivity.</p>
+        </div>
+    </header>
+
+    <section class="premium-content">
+        <div id="non-member-view" class="non-member-teaser">
+            <h2>Join the Elite</h2>
+            <p>As a Premium Member, you get access to exclusive features like advanced productivity tools, priority support, and a private community of like-minded individuals. Sign up today to elevate your TimeWell experience!</p>
+            <button class="cta" onclick="window.location.href='login.html'">Become a Premium Member</button>
+        </div>
+
+        <div id="member-view" class="member-content" style="display: none;">
+            <h2>Welcome, Premium Member!</h2>
+            <div class="premium-grid">
+                <div class="premium-card">
+                    <h3>Advanced Analytics</h3>
+                    <p>Track your productivity with detailed insights and custom reports.</p>
+                    <button class="cta">Explore Analytics</button>
+                </div>
+                <div class="premium-card">
+                    <h3>Exclusive Resources</h3>
+                    <p>Download premium templates, guides, and eBooks to stay ahead.</p>
+                    <button class="cta">View Resources</button>
+                </div>
+                <div class="premium-card">
+                    <h3>Private Community</h3>
+                    <p>Connect with other premium members, share tips, and get inspired.</p>
+                    <button class="cta">Join Community</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a> | 
+                <a href="to-do.html">To-do List</a> | 
+                <a href="task.html">Task Manager</a> | 
+                <a href="time-tracker.html">Time Tracker</a> | 
+                <a href="contact.html">Contact List</a> | 
+                <a href="goal-setting.html">Goal Setting</a> | 
+                <a href="profile.html">Profile</a> | 
+                <a href="login.html">Login</a>
+            </div>
+            <div class="newsletter">
+                <p>Join our newsletter for productivity tips and exclusive updates!</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button class="cta">Subscribe</button>
+                </div>
+            </div>
+            <div class="social-links">
+                
+            </div>
+            <p>© 2025 TimeWell. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Premium Member/premium-members.js"></script>
+</body>
+</html>

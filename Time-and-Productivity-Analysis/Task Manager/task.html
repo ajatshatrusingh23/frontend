@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeWell - Task Manager</title>
+    <link rel="stylesheet" href="taskmanager-styles.css">
+</head>
+<body>
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="cursor-trail" id="trail"></div>
+
+    <header>
+        <nav>
+            <div class="logo">TimeWell</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="todo.html">To-do List</a></li>
+                <li><a href="taskmanager.html">Task Manager</a></li>
+                <li><a href="contactlist.html">Contact List</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <button class="cta-nav">Get Started</button>
+        </nav>
+        <div class="hero">
+            <h1>Your Task Manager</h1>
+            <p>Break down projects into manageable steps with style!</p>
+        </div>
+    </header>
+
+    <section class="task-manager-container">
+        <div class="task-form">
+            <h2>Add a New Project</h2>
+            <form id="taskForm">
+                <input type="text" id="projectInput" placeholder="Enter project name..." required>
+                <input type="text" id="taskInput" placeholder="Enter task..." required>
+                <button type="submit" class="cta">Add Project</button>
+            </form>
+        </div>
+        <div class="task-list" id="taskList">
+            <!-- Projects and tasks will be dynamically added here -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a> | <a href="todo.html">To-do List</a> | <a href="taskmanager.html">Task Manager</a> | 
+                <a href="contactlist.html">Contact List</a> | <a href="login.html">Login</a>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>© 2025 TimeWell. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="taskmanager-script.js"></script>
+</body>
+</html>

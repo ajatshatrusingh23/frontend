@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeWell - Goal Setting</title>
+    <link rel="stylesheet" href="goalsetting.css">
+</head>
+<body>
+    <div class="custom-cursor" id="cursor"></div>
+
+    <header>
+        <nav>
+            <div class="logo">TimeWell</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="todo.html">To-do List</a></li>
+                <li><a href="taskmanager.html">Task Manager</a></li>
+                <li><a href="contactlist.html">Contact List</a></li>
+                <li><a href="goalsetting.html">Goal Setting</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <button class="cta-nav">Get Started</button>
+        </nav>
+        <div class="hero">
+            <h1>Set & Achieve Your Goals</h1>
+            <p>Define your aspirations, track your progress, and stay motivated with our goal-setting tools.</p>
+        </div>
+    </header>
+
+    <section class="goal-input">
+        <h2>Create a New Goal</h2>
+        <form id="goalForm">
+            <input type="text" id="goalName" placeholder="Goal Name (e.g., Learn Coding)" required>
+            <textarea id="goalDescription" placeholder="Describe your goal..." rows="3" required></textarea>
+            <input type="date" id="goalDeadline" required>
+            <button type="submit" class="cta">Add Goal</button>
+        </form>
+    </section>
+
+    <section class="goal-list">
+        <h2>Your Goals</h2>
+        <div class="goals-grid" id="goalsGrid">
+            <!-- Goals will be dynamically added here -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a> | <a href="todo.html">To-do List</a> | <a href="taskmanager.html">Task Manager</a> | 
+                <a href="contactlist.html">Contact List</a> | <a href="goalsetting.html">Goal Setting</a> | <a href="login.html">Login</a>
+            </div>
+            <div class="newsletter">
+                <p>Join our newsletter for productivity tips!</p>
+                <input type="email" placeholder="Enter your email">
+                <button class="cta">Subscribe</button>
+            </div>
+            <p>© 2025 TimeWell. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="goalsetting.js"></script>
+</body>
+</html>

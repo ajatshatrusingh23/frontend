@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeWell - Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="analog-clock-icon-blue.webp" alt="">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="to-do.html">To-do List</a></li>
+                <li><a href="task.html">Task Manager</a></li>
+                <li><a href="time-tracker.html">Time Tracker</a></li>
+                <li><a href="contact.html">Contact List</a></li>
+                <li><a href="goal-setting.html">Goal Setting</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#" id="logout-btn" style="display: none;">Logout</a></li>
+            </ul>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-btn"><i class="fas fa-sun"></i></button>
+                <a href="profile.html" class="profile-link"><i class="fas fa-user"></i> Profile</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="profile-section">
+        <h1>Your Profile</h1>
+        <div class="profile-container">
+            <div class="profile-info">
+                <div class="profile-photo">
+                    <img id="profileImg" src="default-profile.png" alt="Profile Photo">
+                    <input type="file" id="photoUpload" accept="image/*" style="display: none;">
+                    <button class="cta" id="changePhotoBtn">Change Photo</button>
+                </div>
+                <div class="profile-details">
+                    <p><strong>Username:</strong> <span id="username">Loading...</span></p>
+                    <p><strong>Email:</strong> <span id="email">Loading...</span></p>
+                    <button class="cta" id="changePasswordBtn">Change Password</button>
+                </div>
+            </div>
+
+            <div class="performance-data">
+                <h2>Your Performance</h2>
+                <div class="data-grid">
+                    <div class="data-item">
+                        <h3>To-do List</h3>
+                        <p>Completed: <span id="todoCompleted">0</span> / Total: <span id="todoTotal">0</span></p>
+                    </div>
+                    <div class="data-item">
+                        <h3>Task Manager</h3>
+                        <p>Completed: <span id="taskCompleted">0</span> / Total: <span id="taskTotal">0</span></p>
+                    </div>
+                    <div class="data-item">
+                        <h3>Goal Setting</h3>
+                        <p>Completed: <span id="goalCompleted">0</span> / Total: <span id="goalTotal">0</span></p>
+                    </div>
+                    <div class="data-item">
+                        <h3>Contact List</h3>
+                        <p>Total Contacts: <span id="contactTotal">0</span></p>
+                    </div>
+                    <div class="data-item">
+                        <h3>Time Tracker</h3>
+                        <p>Focused Time: <span id="focusTime">0h 0m</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Password Change Modal -->
+    <div class="modal" id="passwordModal" style="display: none;">
+        <div class="modal-content">
+            <h2>Change Password</h2>
+            <form id="passwordForm">
+                <input type="password" id="oldPassword" placeholder="Old Password" required>
+                <input type="password" id="newPassword" placeholder="New Password" required>
+                <input type="password" id="confirmPassword" placeholder="Confirm New Password" required>
+                <div class="modal-buttons">
+                    <button type="submit" class="cta">Submit</button>
+                    <button type="button" class="cta secondary" id="cancelPasswordBtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a> | 
+                <a href="to-do.html">To-do List</a> | 
+                <a href="task.html">Task Manager</a> | 
+                <a href="contact.html">Contact List</a> | 
+                <a href="goal-setting.html">Goal Setting</a> | 
+                <a href="profile.html">Profile</a> | 
+                <a href="login.html">Login</a>
+            </div>
+            <div class="newsletter">
+                <p>Join our newsletter for productivity tips and exclusive updates!</p>
+                <input type="email" placeholder="Enter your email">
+                <button class="cta">Subscribe</button>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>© 2025 TimeWell. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html>

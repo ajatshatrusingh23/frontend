@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeWell - Contact List</title>
+    <link rel="stylesheet" href="Contact List/contactlist-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="cursor-trail" id="trail"></div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="analog-clock-icon-blue.webp" alt="TimeWell Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="to-do.html">To-do List</a></li>
+                <li><a href="task.html">Task Manager</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-btn"><i class="fas fa-sun"></i></button>
+                <button class="cta-nav">Get Started</button>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>Your Contact List</h1>
+            <p>Keep your connections organized in one vibrant place!</p>
+        </div>
+    </header>
+
+    <section class="contact-container">
+        <div class="contact-form">
+            <h2>Add a New Contact</h2>
+            <form id="contactForm">
+                <input type="text" id="nameInput" placeholder="Enter name..." required>
+                <input type="tel" id="phoneInput" placeholder="Enter phone number..." required>
+                <input type="email" id="emailInput" placeholder="Enter email..." required>
+                <button type="submit" class="cta">Add Contact</button>
+            </form>
+        </div>
+        <div class="contact-list" id="contactList">
+            <!-- Contacts will be dynamically added here -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a> | 
+                <a href="to-do.html">To-do List</a> | 
+                <a href="task.html">Task Manager</a> | 
+                <a href="time-tracker.html">Time Tracker</a> | 
+                <a href="contact.html">Contact List</a> | 
+                <a href="goal-setting.html">Goal Setting</a> | 
+                <a href="profile.html">Profile</a> | 
+                <a href="login.html">Login</a>
+            </div>
+            <div class="newsletter">
+                <p>Join our newsletter for productivity tips and exclusive updates!</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button class="cta">Subscribe</button>
+                </div>
+            </div>
+            <div class="social-links">
+                
+            </div>
+            <p>© 2025 TimeWell. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Contact List/contactlist-script.js"></script>
+</body>
+</html>
